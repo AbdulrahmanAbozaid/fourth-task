@@ -27,12 +27,26 @@
     <!-- start header -->
 
     <header>
-        <div class="container d-flex justify-content-around pt-4">
+        <div class="container d-flex justify-content-lg-around justify-content-sm-between justify-content-md-between pt-4">
+
             <div class="logo mr-5">
                 <img src="images/logo.svg" alt="">
             </div>
+
+            <div class="hum-icon ">
+                <a href="#" class="d-lg-none d-sm-inline-block d-md-inline-block mb-3 mr-4"><img src="images/icon-hamburger.svg" alt=""></a>
+
+                <ul class="list--group d-none">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <!-- nav -->
             <nav>
-                <ul class="navBar d-flex">
+                <ul class="navBar  d-sm-none d-md-none d-lg-flex">
                     <li class="ml-2"><a href="#">Home</a></li>
                     <li class="ml-2"><a href="#">About</a></li>
                     <li class="ml-2"><a href="#">Contact</a></li>
@@ -40,7 +54,7 @@
                     <li class="ml-2"><a href="#">Careers</a></li>
                 </ul>
             </nav>
-            <div class="request ml-5">
+            <div class="request ml-5 d-sm-none d-md-none d-lg-inline-block">
                 <a href="#" class="req rounded-pill">Request invite</a>
             </div>
         </div>
@@ -48,16 +62,16 @@
     <!-- end header -->
 
     <!-- start landing  -->
-    <div class="landing d-flex justify-content-between">
-        <div class="left-land d-flex flex-column   justify-content-center pl-5">
-            <h1 class="fs-1">Next generation digital banking</h1>
+    <div class="landing d-flex justify-content-lg-between justify-content-md-evenlyjustify-content-sm-evenly flex-lg-row flex-md-column flex-sm-column">
+        <div class="left-land d-flex flex-column align-items-sm-center align-items-md-center align-items-lg-start  justify-content-center ml-5 text-md-left text-sm-center text-lg-left">
+            <h1 class="head-next">Next generation digital banking</h1>
             <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
 
             <div class="request">
                 <a href="#" class="req rounded-pill">Request invite</a>
             </div>
         </div>
-        <div class="right-land">
+        <div class="right-land d-md-none d-lg-inline-block d-sm-none">
             <img class="bg-img" src="images/bg-intro-desktop.svg" width="200px" alt="">
             <img class="right-image" src="images/image-mockups.png" alt="">
         </div>
@@ -65,7 +79,7 @@
     <!-- end landing  -->
 
     <!-- start about -->
-    <div class="about">
+    <div class="about my-md-5 my-sm-5 ">
         <div class="container">
             <div class="about-top">
                 <h1>Why choose Easybank?</h1>
@@ -101,7 +115,7 @@
     </div>
     <!-- end about -->
     <!-- Start latest articles -->
-    <div class="Blog">
+    <div class="Blog my-md-5 my-sm-5 ">
         <div class="container">
             <div class="row">
                 <h3 class="fs-1 fw-light last">Latest Articles</h3>
@@ -110,13 +124,21 @@
                 <div class="col plan">
                     <img class="w-100 rounded-top" src="images/image-currency.jpg" alt="">
                     <div class="details">
-                        <p>By Claire Robinson</p>
-                        <h3>Receive money in any currency with no fees</h3>
-                        <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single</p>
+                        <p>By Wilson Hutton</p>
+                        <h3>Take your Easybank card wherever you go</h3>
+                        <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
                     </div>
                 </div>
                 <div class="col plan">
-                    <img class="w-100 rounded-top" src="images/image-currency.jpg" alt="">
+                    <img class="w-100 rounded-top" src="images/image-restaurant.jpg" alt="">
+                    <div class="details">
+                        <p>By Wilson Hutton</p>
+                        <h3>Treat yourself without worrying about money</h3>
+                        <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …</p>
+                    </div>
+                </div>
+                <div class="col plan">
+                    <img class="w-100 rounded-top" src="images/image-plane.jpg" alt="">
                     <div class="details">
                         <p>By Claire Robinson</p>
                         <h3>Receive money in any currency with no fees</h3>
@@ -124,19 +146,11 @@
                     </div>
                 </div>
                 <div class="col plan">
-                    <img class="w-100 rounded-top" src="images/image-currency.jpg" alt="">
+                    <img class="w-100 rounded-top" src="images/image-confetti.jpg" alt="">
                     <div class="details">
                         <p>By Claire Robinson</p>
-                        <h3>Receive money in any currency with no fees</h3>
-                        <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single</p>
-                    </div>
-                </div>
-                <div class="col plan">
-                    <img class="w-100 rounded-top" src="images/image-currency.jpg" alt="">
-                    <div class="details">
-                        <p>By Claire Robinson</p>
-                        <h3>Receive money in any currency with no fees</h3>
-                        <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single</p>
+                        <h3>Our invite-only Beta accounts are now live!</h3>
+                        <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...</p>
                     </div>
                 </div>
             </div>
@@ -145,15 +159,15 @@
     <!-- end latest articles -->
     <div class="clearfix"></div>
     <!-- start footer -->
-    <footer>
+    <footer class="my-md-5 my-sm-5 ">
         <div class="coontainer  w-75 m-auto px-3 pt-5">
             <div class="row">
-                <div class="col-2 d-flex flex-column justify-content-between">
-                    <div class="up-logo">
+                <div class="col-lg-2 col-sm-11 d-flex flex-column justify-content-between align-items-sm-center align-items-md-center align-items-lg-center">
+                    <div class="up-logo pl-sm-5 ml-sm-4">
                         <img src="images/logo.png" width="178px" alt="">
                     </div>
 
-                    <ul class="scocials">
+                    <ul class="scocials pl-sm-4 ">
                         <li>
                             <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
                         </li>
@@ -172,22 +186,22 @@
                     </ul>
 
                 </div>
-                <div class="col-2">
-                    <ul class="links d-flex flex-column justify-content-evenly">
+                <div class="col-lg-2 col-sm-11">
+                    <ul class="links d-flex flex-column justify-content-evenly align-items-sm-center align-items-md-center align-items-lg-center">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
-                    <ul class="links d-flex flex-column justify-content-evenly">
+                <div class="col-lg-2 col-sm-11">
+                    <ul class="links d-flex flex-column justify-content-evenly align-items-sm-center align-items-md-center align-items-lg-center">
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Support</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-6 text-right">
-                    <ul class="end d-flex flex-column justify-content-around">
+                <div class="col-lg-6 col-sm-11 text-right ">
+                    <ul class="end d-flex flex-column justify-content-around align-items-sm-center align-items-md-center align-items-lg-end">
                         <li>
                             <div class="request">
                                 <a href="#" class="req rounded-pill">Request invite</a>
@@ -206,40 +220,7 @@
 
 
 
-    <!-- 
 
-  
-  
-   …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set 
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...
-
-   -->
-
-    <!-- About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  
-   -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
 </body>

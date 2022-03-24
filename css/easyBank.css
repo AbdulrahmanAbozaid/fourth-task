@@ -6,6 +6,10 @@
     --Bright-Cyan: hsl(192, 70%, 51%);
 }
 
+::selection {
+    color: rgb(126, 25, 221);
+}
+
 
 /* end vars */
 
@@ -48,26 +52,6 @@ footer,
 }
 
 
-/* Desktop
-
-@media (min-width: 1440px) {
-    .container {
-        width: 1420px;
-    }
-}
-
-
-/* mobile */
-
-
-/* 
-@media (min-width: 375px) {
-    .container {
-        width: 370px;
-    }
-} */
-
-
 /* end global values */
 
 
@@ -89,6 +73,26 @@ header {
 
 .navBar {
     color: hsl(0, 0%, 98%);
+}
+
+
+/* start list group */
+
+.hum-icon {
+    position: relative;
+}
+
+header .hum-icon a img:hover+ul.list--group {
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000000;
 }
 
 li a {
@@ -242,7 +246,8 @@ a:hover {
 
 footer {
     background-color: var(--primary-blue);
-    height: 191px;
+    /* height: 191px; */
+    max-height: 509px;
     width: 100vw;
     max-width: 100vw;
 }
