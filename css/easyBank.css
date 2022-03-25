@@ -111,6 +111,7 @@ li a {
     color: hsl(0, 4%, 36%);
     opacity: .5;
     position: relative;
+    padding-bottom: 1em;
 }
 
 a:hover {
